@@ -1,0 +1,26 @@
+.content{
+  background-image: url(tech-expert.jpg);
+  background-size: cover;
+  height: 730px;
+  opacity: 0.6;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  &__box{
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.8;
+    &__header{
+      font-size: 45px;
+      text-align: center;
+    }
+    &__form{
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}

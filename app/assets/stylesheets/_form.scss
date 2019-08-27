@@ -1,0 +1,40 @@
+.make-container{
+  background-image: url(tech-expert.jpg);
+  background-size: cover;
+  height: 730px;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .make-content{
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.8;
+    &__header {
+      font-size: 45px;
+      text-align: center;
+    }
+    &__form{
+      width: 50%;
+      margin: 0 auto;
+      &__word{
+        #post_word{
+          width: 100%;
+          border-radius: 5px;
+          border: solid black;
+        }
+      }
+      &__mean{
+        #post_mean{
+          border-radius: 5px;
+          border: solid black;
+          height: 100px;
+          width: 100%;
+        }     
+      }
+    }
+  }
+}
