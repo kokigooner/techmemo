@@ -1,0 +1,29 @@
+.main-content{
+  background-image: url(tech-expert.jpg);
+  background-size: cover;
+  height: 730px;
+  opacity: 0.6;
+  width: 100%;
+  .index-container{
+    width: 50%;
+    padding-top: 30px;
+    margin: auto;
+    overflow: scroll;
+    .word-box{
+      background-color:white;
+      border: solid black;
+      opacity:0.95;
+      border-radius: 6px;
+      &__top{
+        padding:10px;
+      }
+      &__bottom{
+        padding: 10px;
+        &__mean{
+          display: none;
+          
+        }
+      }
+    }
+  }
+}
