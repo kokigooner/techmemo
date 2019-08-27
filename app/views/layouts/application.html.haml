@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Techmemo
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    %script{ type: "text/javascript", src: "https://js.pay.jp/" }
+    %script{ src: "https://kit.fontawesome.com/2cb7663f0e.js" }
+  %body
+    .header
+      .header__logo
+        Tech-Dictionary
+      %ul.header__menus
+        %li
+          = link_to "単語帳", root_path, class: 'btn'
+        %li
+          = link_to "単語帳作成", new_word_path ,class: 'btn'
+        - if user_signed_in?
+          %li.user_nav.grid-6
+            = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'    
+        - else
+          %li
+            = link_to "ログイン", new_user_session_path, class: 'btn'
+          %li.grid-6
+            = link_to "新規登録", new_user_registration_path, class: 'btn'
+    = yield
