@@ -4,25 +4,29 @@
   height: 730px;
   opacity: 0.6;
   width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
   .index-container{
+    border-radius: 5px;
     width: 50%;
     padding-top: 30px;
     margin: auto;
+    height: 650px;
     overflow: scroll;
+    background-color: white;
+    opacity: 0.8;
     .word-box{
       background-color:white;
       border: solid black;
       opacity:0.95;
       border-radius: 6px;
+      margin: 10px 10px;
       &__top{
         padding:10px;
       }
       &__bottom{
         padding: 10px;
-        &__mean{
-          display: none;
-          
-        }
       }
     }
   }
