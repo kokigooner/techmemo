@@ -1,0 +1,15 @@
+.content
+  .content__box
+    .content__box__header
+      %h2 ログイン
+    .content__box__form
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .field.form-email
+          %br/
+          = f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "メールアドレス"
+        .field.form-pw
+          %br/
+          = f.password_field :password, autocomplete: "current-password", placeholder: "パスワード"
+        .actions
+          = f.submit "ログイン"
+      -# = render "devise/shared/links"

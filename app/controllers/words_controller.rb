@@ -1,7 +1,7 @@
 class WordsController < ApplicationController
+  before_action :move_to_index, except: :index
   def index
     @words = Word.all
-
   end
 
   def new
@@ -9,10 +9,8 @@ class WordsController < ApplicationController
   end
 
   def create
-    Word.create(word:params[:post_params], mean:params[:post_params])
-    #redirect_to root_path, notice:  '新規作成しました'
-    # new_word = current_user.words.new(word:params[:post][:word], mean:params[:post][:mean])
-    # new_word.save
+    Word.create(post_params)
+    redirect_to root_path
   end
 
   def edit
@@ -36,6 +34,10 @@ class WordsController < ApplicationController
   private
 
   def post_params
-    params.require(:word).permit!
+    params.permit(:word, :mean)
+  end
+
+  def move_to_index
+    redirect_to action: "index" unless user_signed_in?
   end
 end

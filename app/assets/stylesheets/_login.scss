@@ -21,6 +21,28 @@
     &__form{
       width: 60%;
       margin: 0 auto;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      .field{
+        #user_email{
+          border: solid black;
+          border-radius: 5px;
+        }
+        #user_password{
+          border: solid black;
+          border-radius: 5px;
+        }
+        #user_password_confirmation{
+          border: solid black;
+          border-radius: 5px;
+        }
+      }
+      .action{
+        #submit-btn{
+        text-align: center;
+        }
+      }
     }
   }
 }
