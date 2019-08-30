@@ -65,3 +65,6 @@ gem 'erb2haml'
 gem 'devise'
 gem 'pry-byebug'
 gem 'jquery-rails'
+group :production do
+  gem 'unicorn', '5.4.1'
+end

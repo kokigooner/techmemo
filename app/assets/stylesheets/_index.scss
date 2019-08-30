@@ -22,11 +22,24 @@
       opacity:0.95;
       border-radius: 6px;
       margin: 10px 10px;
-      &__top{
+      &__menu{
+        list-style: none;
+        display:flex;
+        justify-content: flex-end;
+        .menu-btn{
+          padding: 0 5px;
+          text-decoration: none;
+          color: black;
+        }
+      }
+      &__word{
         padding:10px;
       }
       &__bottom{
         padding: 10px;
+        &__mean {
+          display: none;
+        }
       }
     }
   }

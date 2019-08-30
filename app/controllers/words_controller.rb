@@ -9,7 +9,7 @@ class WordsController < ApplicationController
   end
 
   def create
-    Word.create(post_params)
+    Word.create(word: post_params[:word], mean: post_params[:mean], user_id: current_user.id)
     redirect_to root_path
   end
 
@@ -20,7 +20,7 @@ class WordsController < ApplicationController
   def update
     word = Word.find(params[:id])
     if word.user.id == current_user.id
-      word.update(word_params)
+      word.update(post_params)
       redirect_to root_path
     end
   end
