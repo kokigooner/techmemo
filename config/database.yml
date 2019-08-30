@@ -52,3 +52,4 @@ production:
   database: techmemo_production
   username: techmemo
   password: <%= ENV['TECHMEMO_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
