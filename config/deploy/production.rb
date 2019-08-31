@@ -60,3 +60,8 @@
 #     # password: "please use keys"
 #   }
 server '52.199.74.201', user: 'ec2-user', roles: %w{app db web}
+set :rails_env, "production"
+set :unicorn_rack_env, "production"
+set :ssh_options, {
+  keys: [File.expand_path('~/ssh/key-tech-memo.pem')]
+}
