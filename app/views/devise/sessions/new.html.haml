@@ -10,6 +10,7 @@
         .field.form-pw
           %br/
           = f.password_field :password, autocomplete: "current-password", placeholder: "パスワード"
-        .actions
+        .action
           = f.submit "ログイン"
-      -# = render "devise/shared/links"
+        = link_to "新規登録をする", "/users/sign_up", class: "signin-link"
+      

@@ -23,9 +23,13 @@
       border-radius: 6px;
       margin: 10px 10px;
       &__menu{
+        padding-right: 3px;
         list-style: none;
         display:flex;
         justify-content: flex-end;
+        i {
+          color: black;
+        }
         .menu-btn{
           padding: 0 5px;
           text-decoration: none;
