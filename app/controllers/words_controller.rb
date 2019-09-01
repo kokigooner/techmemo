@@ -1,7 +1,12 @@
 class WordsController < ApplicationController
   before_action :move_to_index, except: :index
+
   def index
-    @words = Word.all
+    if user_signed_in?
+      @words = Word.where(user_id: current_user.id)
+    else
+      redirect_to  new_user_session_path
+    end
   end
 
   def new
@@ -40,4 +45,5 @@ class WordsController < ApplicationController
   def move_to_index
     redirect_to action: "index" unless user_signed_in?
   end
+
 end
