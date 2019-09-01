@@ -4,3 +4,4 @@ $(function(){
     $(this).next('ul.word-box__bottom__mean').slideToggle();
   })
 })
+
