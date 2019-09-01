@@ -2,12 +2,6 @@
   .index-container
     - @words.each do |word|
       .word-box
-        .word-box__menu
-          - if user_signed_in? && current_user.id == word.user_id
-            %li
-              = link_to '編集', "/words/#{word.id}/edit", method: :get, class: "menu-btn"
-            %li
-              = link_to '削除', "/words/#{word.id}", method: :delete, class: "menu-btn"
         .word-box__word
           %p 単語
           = word.word
@@ -15,7 +9,13 @@
           %p.word-box__bottom__show 意味を見る
           %ul.word-box__bottom__mean
             = word.mean
+        .word-box__menu
+          - if user_signed_in? && current_user.id == word.user_id
+            %li
+              = link_to "/words/#{word.id}/edit", method: :get, class: "menu-btn" do
+                %i.fas.fa-edit       
+            %li
+              = link_to method: :delete, class: "menu-btn" do
+                %i.fas.fa-trash-alt
 
 
-<i class="fas fa-trash-alt"></i>
-<i class="fas fa-edit"></i>
