@@ -5,8 +5,10 @@
     .make-contet__form
       = form_tag("/words/#{@word.id}",method: :patch) do
         .make-content__form__word
-          %textarea#post_word{cols: "35", name: "word", placeholder: "単語", type: "text"}
+          %textarea#post_word{cols: "35", name: "word", type: "text"}
+            = @word.word
         .make-content__form__mean
-          %textarea#post_mean{cols: "35", name: "mean", placeholder: "意味", type: "text", rows: "8"}
+          %textarea#post_mean{cols: "35", name: "mean", type: "text", rows: "8"}
+            = @word.mean
         .make-content__form__submit
           %input{type: "submit", value:"更新する"}
