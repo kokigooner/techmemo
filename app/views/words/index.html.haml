@@ -8,14 +8,14 @@
         .word-box__bottom
           %p.word-box__bottom__show 意味を見る
           %ul.word-box__bottom__mean
-            = word.mean
+            = simple_format word.mean
         .word-box__menu
           - if user_signed_in? && current_user.id == word.user_id
             %li
               = link_to "/words/#{word.id}/edit", method: :get, class: "menu-btn" do
                 %i.fas.fa-edit       
             %li
-              = link_to method: :delete, class: "menu-btn" do
+              = link_to "/words/#{word.id}", method: :delete, class: "menu-btn" do
                 %i.fas.fa-trash-alt
-
+     
 
