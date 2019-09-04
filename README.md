@@ -37,7 +37,8 @@ Tech-dictionary
 単純な機能のみでできている。
 
 # DEMO
- 
+ ![demo画像 - Techmemo - 3 114 226 71](https://user-images.githubusercontent.com/52565469/64221827-1c6be880-cf09-11e9-89ee-eeed8097d19e.png)
+
 
 # Features
 
@@ -46,11 +47,7 @@ Tech-dictionary
 学習ツールとして使うことも可能になる。
 
 # Requirement
-Ruby 2.5.1
-Rails 5.2.3
-JQuery
-haml
-sass
+Ruby 2.5.1 /Rails 5.2.3 /JQuery /haml /sass
 
 # Note
 
@@ -59,6 +56,4 @@ sass
 パスワード 123456
 
 # Author
-
 * 作成者 赤嶺昂樹
-* Wantedly Koki Akamine
