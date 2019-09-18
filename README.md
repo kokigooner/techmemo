@@ -1,31 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-# Name（リポジトリ/プロジェクト/OSSなどの名前）
-
-Tech-dictionary
+# Tech-dictionary
 
 "Tech-dicyionary"は簡潔に言えば単語帳なようなものである。
 覚えたい単語を登録して一覧で見ることができる。
@@ -33,8 +8,7 @@ Tech-dictionary
 一問一答のように使うことができる。
 開発に至った経緯は単純でプログラミングを学習していて
 このようなサイトがあったらいいなと思ったからである。
-学んだことがしっかり身についているか確認をする為に作成したため
-単純な機能のみでできている。
+学んだことがしっかり身についているか確認をする為に作成した。
 
 # DEMO
  ![demo画像 - Techmemo - 3 114 226 71](https://user-images.githubusercontent.com/52565469/64221827-1c6be880-cf09-11e9-89ee-eeed8097d19e.png)
@@ -50,6 +24,7 @@ Tech-dictionary
 Ruby 2.5.1 /Rails 5.2.3 /JQuery /haml /sass
 
 # Note
+URL:http://3.114.226.71/
 
 仮ユーザー
 メールアドレス aaa@aaa
